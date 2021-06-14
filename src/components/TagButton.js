@@ -22,6 +22,14 @@ const useStyles = makeStyles((theme) => ({
       height: 30,
       width: 30
     }
+  },
+  tagIcon: {
+    height: 20,
+    width: 20,
+    [theme.breakpoints.down('sm')]: {
+      height: 16,
+      width: 16
+    }
   }
 }));
 
@@ -40,7 +48,7 @@ const TagButton = React.forwardRef(({
         size="small"
         {...rest}
       >
-        <LocalOfferIcon />
+        <LocalOfferIcon className={classes.tagIcon} />
       </IconButton>
     </div>
   )
