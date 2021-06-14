@@ -14,7 +14,7 @@ import {
 const ModalTooltip = withStyles((theme) => ({
   tooltip: {
     backgroundColor: theme.palette.common.white,
-    width: 320,
+    minWidth: 320,
     [theme.breakpoints.down('sm')]: {
       minWidth: 'calc(100vw - 10px)'
     }
@@ -27,11 +27,14 @@ const ModalTooltip = withStyles((theme) => ({
   },
 }))(Tooltip);
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   btnShop: {
     color: '#676564',
     fontSize: 13,
-    padding: 0
+    padding: 0,
+    '&:hover': {
+      cursor: 'pointer'
+    }
   }
 }));
 
@@ -95,6 +98,7 @@ const HeroTooltip = ({
         </React.Fragment>
       }
       enterTouchDelay={0}
+      leaveDelay={500}
       leaveTouchDelay={90000}
       placement={position}
     >
