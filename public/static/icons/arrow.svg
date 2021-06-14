@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Arrow@1x</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desk---Hero---Default" transform="translate(-324.000000, -311.000000)" fill="#F7F5F2">
+            <g id="Btn" transform="translate(130.000000, 287.000000)">
+                <polygon id="Arrow" points="204.6 25.4 208.2 29 194 29 194 31 208.2 31 204.6 34.6 206 36 212 30 206 24"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
