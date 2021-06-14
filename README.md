@@ -31,7 +31,7 @@ You will also see any lint errors in the console.
 ## Additional features and technologies
 1. built understandable, succinct, and maintenable architecture.
 2. built modular and functional components using React Hooks.
-3. ensured performance resolving re-rendering issues in the project.
+3. ensured performance resolving re-rendering issues and SEO principles in the test.
 4. built pixel-perfect and responsive banner, and wrote CSS components using Material UI styles and hooks.
 5. used the most latest technologies including ECMAScript.
 
