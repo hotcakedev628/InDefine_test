@@ -3,7 +3,6 @@ import React, {
   useEffect,
   useState
 } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import {
@@ -234,14 +233,14 @@ const Hero = ({ className, ...rest }) => {
                 the refresh sale
               </Typography>
               <Typography
-                variant="subtitle1"
+                variant="h2"
                 color="textSecondary"
               >
                 15% off sitewide to recharge your living space. Ends Friday, 2/19
               </Typography>
               <Typography
                 className={classes.description}
-                variant="subtitle2"
+                variant="body1"
                 color="textSecondary"
               >
                 15+ collections, 100+ fabrics, 20+ legs
@@ -249,9 +248,9 @@ const Hero = ({ className, ...rest }) => {
               <Button
                 className={classes.btnStart}
                 color="primary"
-                component={RouterLink}
+                component="a"
                 disableElevation
-                to="/app"
+                href="https://www.interiordefine.com/"
                 variant="contained"
                 endIcon={
                   <Box ml={1}>
