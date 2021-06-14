@@ -7,9 +7,9 @@ export default {
     letterSpacing: '-0.24px'
   },
   h2: {
-    fontWeight: 500,
-    fontSize: 29,
-    letterSpacing: '-0.24px'
+    fontWeight: 600,
+    fontSize: 22,
+    lineHeight: 1.294
   },
   h3: {
     fontWeight: 500,
@@ -42,6 +42,10 @@ export default {
     lineHeight: 1.294
   },
   subtitle2: {
+    fontWeight: 400,
+    fontSize: 17
+  },
+  body1: {
     fontWeight: 400,
     fontSize: 17
   },
