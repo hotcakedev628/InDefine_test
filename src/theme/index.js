@@ -26,7 +26,7 @@ const themesOption = {
       paper: colors.common.white
     },
     primary: {
-      main: '#DC6666'
+      main: '#C34242'
     },
     secondary: {
       main: '#F7F5F2'
