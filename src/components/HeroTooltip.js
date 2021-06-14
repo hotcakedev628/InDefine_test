@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link as RouterLink } from 'react-router-dom';
 import {
   Box,
   Button,
@@ -29,7 +30,8 @@ const ModalTooltip = withStyles((theme) => ({
 const useStyles = makeStyles((theme) => ({
   btnShop: {
     color: '#676564',
-    fontSize: 13
+    fontSize: 13,
+    padding: 0
   }
 }));
 
@@ -48,13 +50,15 @@ const HeroTooltip = ({
       disableHoverListener={disableHover}
       title={
         <React.Fragment>
-          <Box borderRadius={3}>
+          <Box
+            borderRadius={3}
+            px={2}
+            py={1}
+          >
             <Box
               display="flex"
               justifyContent="space-between"
               alignItems="center"
-              px={2}
-              py={1}
             >
               <Box display="flex" flexDirection="column">
                 <Typography variant="subtitle2" color="textSecondary">
@@ -64,11 +68,23 @@ const HeroTooltip = ({
                   {product.description}
                 </Typography>
               </Box>
+              <Button
+                disableElevation
+                color="primary"
+                component={RouterLink}
+                to="#"
+                variant="contained"
+              >
+                Shop now
+              </Button>
             </Box>
-            <Divider />
-            <Box display="flex" px={2} py={1}>
+            <Box my={1.5}>
+              <Divider />
+            </Box>
+            <Box display="flex" justifyContent="start">
               <Button
                 className={classes.btnShop}
+                component="a"
                 endIcon={
                   <img src="/static/icons/modal-arrow-right.svg" alt="Modal Arrow Right" />
                 }
