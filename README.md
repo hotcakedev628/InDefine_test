@@ -11,6 +11,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 | Material UI | 4.11.4
 | history | 5.0.0 |
 
+## Lighthouse Score
+![lighthouse score](public/static/images/lighthouse-score.jpg)
+
 ## How to get running
 
 In the project directory, you can run:
