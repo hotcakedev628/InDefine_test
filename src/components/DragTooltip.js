@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import {
   Box,
   Button,
+  Fade,
   Hidden,
   makeStyles
 } from '@material-ui/core';
@@ -25,24 +26,37 @@ const DragTooltip = ({
   const classes = useStyles();
 
   return (
-    <Hidden smUp smDown={isHidden}>
-      <Button
-        className={clsx(classes.root, className)}
-        color="secondary"
-        // variant="contained"
-        startIcon={
-          <Box mr={1}>
-            <img className={classes.iconArrowLeft} src="/static/icons/arrow.svg" alt="Explore Arrow Left Icon" />
-          </Box>
-        }
-        endIcon={
-          <Box ml={1}>
-            <img src="/static/icons/arrow.svg" alt="Explore Arrow Right Icon" />
-          </Box>
-        }
+    <Hidden smUp>
+      <Fade
+        in={!isHidden}
+        timeout={1000}
+        unmountOnExit
+        {...rest}
       >
-        Drag to explore
-      </Button>
+        <Button
+          className={clsx(classes.root, className)}
+          color="secondary"
+          startIcon={
+            <Box mr={1}>
+              <img
+                className={classes.iconArrowLeft}
+                src="/static/icons/arrow.svg"
+                alt="Explore Arrow Left Icon"
+              />
+            </Box>
+          }
+          endIcon={
+            <Box ml={1}>
+              <img
+                src="/static/icons/arrow.svg"
+                alt="Explore Arrow Right Icon"
+              />
+            </Box>
+          }
+        >
+          Drag to explore
+        </Button>
+      </Fade>
     </Hidden>
   )
 }
