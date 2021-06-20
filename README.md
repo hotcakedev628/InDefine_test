@@ -22,6 +22,9 @@ In the project directory, you can run:
 
 ### `yarn start`
 
+## Sketch Design
+https://www.sketch.com/s/3ea18fa1-e492-4250-a28e-6df50c9fcba7
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
