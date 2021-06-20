@@ -25,6 +25,10 @@ In the project directory, you can run:
 ## Sketch Design
 https://www.sketch.com/s/3ea18fa1-e492-4250-a28e-6df50c9fcba7
 
+![image](https://user-images.githubusercontent.com/60177750/122683640-9187db00-d1ce-11eb-9113-8c9c977e3b23.png)
+
+![image](https://user-images.githubusercontent.com/60177750/122683652-a06e8d80-d1ce-11eb-9acc-2173436dbcb2.png)
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
